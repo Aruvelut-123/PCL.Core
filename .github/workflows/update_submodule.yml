@@ -10,10 +10,10 @@ jobs:
   update-main-submodule:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout CE repository
+      - name: Checkout MOD repository
         uses: actions/checkout@v3
         with:
-          repository: PCL-Community/PCL2-CE
+          repository: Aruvelut-123/PCL2-MOD
           token: ${{ secrets.UPDATE_PAT_TOKEN }}
 
       - name: Import GPG key
@@ -26,8 +26,8 @@ jobs:
 
       - name: Update submodule
         run: |
-          git config user.name "PCL-Community-Bot"
-          git config user.email "167983016+PCL-Community-Bot@users.noreply.github.com"
+          git config user.name "Baymaxawa"
+          git config user.email "2502474438@qq.com"
           git submodule update --init PCL.Core
           cd PCL.Core
           git fetch origin
@@ -37,7 +37,7 @@ jobs:
             git checkout $LATEST_COMMIT
             cd ..
             git add PCL.Core
-            git commit -S -m "submodule: update to PCL-Community/PCL.Core@${LATEST_COMMIT}"
+            git commit -S -m "submodule: update to Aruvelut-123/PCL.Core@${LATEST_COMMIT}"
             git push origin dev
           else
             echo "The submodule is already at the latest commit"
