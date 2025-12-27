@@ -247,16 +247,6 @@ public static partial class Config
         [ConfigItem<bool>("SystemDisableHardwareAcceleration", false)] public partial bool DisableHardwareAcceleration { get; set; }
 
         /// <summary>
-        /// 遥测。
-        /// </summary>
-        [ConfigItem<bool>("SystemTelemetry", false)] public partial bool Telemetry { get; set; }
-
-        /// <summary>
-        /// Mirror 酱 CDK。
-        /// </summary>
-        [ConfigItem<string>("SystemMirrorChyanKey", "", ConfigSource.SharedEncrypt)] public partial string MirrorChyanKey { get; set; }
-
-        /// <summary>
         /// 实时日志最大行数。
         /// </summary>
         [ConfigItem<int>("SystemMaxLog", 13)] public partial int MaxGameLog { get; set; }
