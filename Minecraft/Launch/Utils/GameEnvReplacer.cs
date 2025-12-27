@@ -18,8 +18,8 @@ public class GameEnvReplacer(IMcInstance instance, JavaInfo selectedJava) {
     
     // ReSharper disable InconsistentNaming
     // 常量定义
-    private const string LAUNCHER_NAME = "PCLCE";
-    private const string LAUNCHER_VERSION = "409";
+    private const string LAUNCHER_NAME = "PCLMOD";
+    private const string LAUNCHER_VERSION = "102";
     private const string DEFAULT_USER_TYPE = "msa";
     private const int MINECRAFT_LEGACY_VERSION_BUILD = 12;
     private const int JAVA_VERSION_8 = 8;

@@ -1,5 +1,4 @@
 ﻿using PCL.Core.App.Configuration;
-using PCL.Core.Link;
 
 namespace PCL.Core.App;
 
@@ -396,11 +395,6 @@ public static partial class Config
         [ConfigItem<bool>("LinkFirstTimeNetTest", true, ConfigSource.SharedEncrypt)] public partial bool DoFirstTimeNetTest { get; set; }
 
         /// <summary>
-        /// 传输协议优先策略。
-        /// </summary>
-        [ConfigItem<LinkProtocolPreference>("LinkProtocolPreference", LinkProtocolPreference.Tcp)] public partial LinkProtocolPreference ProtocolPreference { get; set; }
-
-        /// <summary>
         /// 尝试使用端口猜测打通对称性 NAT。
         /// </summary>
         [ConfigItem<bool>("LinkTryPunchSym", true)] public partial bool TryPunchSym { get; set; }
@@ -786,7 +780,7 @@ public static partial class Config
         /// <summary>
         /// 自定义左下角版本信息。
         /// </summary>
-        [ConfigItem<string>("LaunchArgumentInfo", "PCLCE", ConfigSource.Local)] public partial string TypeInfo { get; set; }
+        [ConfigItem<string>("LaunchArgumentInfo", "PCLMOD", ConfigSource.Local)] public partial string TypeInfo { get; set; }
 
         /// <summary>
         /// 选择的默认 Java 实例。
